@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+<style>
+    :root {
+        --text-color: #f0f4f5;
+        --background-color: rgb(48, 120, 138);
+        --accent-color: rgb(235, 223, 120);
+        }
+
+    @media screen and (max-width: 768px) {
+        .container {
+        background-color: aquamarine;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        }
+
+        .menu li:hover {
+            background-color: red;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        .menu {
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+    
+    body {
+        margin: 0px;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    ul {
+        padding-left: 0px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--background-color);
+        align-items: center;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .menu li {
+        padding: 8px;
+    }
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            nav__logo
+        </div>
+        <ul class="menu">
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>GALLERY</li>
+            <li>CONTACT</li>
+        </ul>
+        <div>
+            ★
+        </div>
+    </div>
+</body>
+</html>
